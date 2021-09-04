@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagem/carro-esporte.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+    <title>Sobre</title>
+    <style>
+
+        .a{
+            text-decoration: none;
+            
+        }
+
+        .imagem{
+            padding-top: 13%;
+            padding-left: 4%;
+            float: left;
+        }
+
+        .text {
+            color: #E8E8E8; 
+            padding-right: 20%;
+        }
+
+        .layout {
+            color: #F0FFFF;
+            padding-left: 30%;
+        }
+
+        div.layout {
+            padding: 8px 8px;
+            background-color: #363636;
+            border-left: 8px solid #BEBEBE;
+            padding-top: 4%;
+        }
+
+        .referencia {
+            margin-top: 5%; 
+            padding-left: 40%;
+            color: #BEBEBE;
+        }
+
+        fieldset {
+            padding-top: 4%;
+            border: none;
+            width: 82%;
+            margin: 0;
+            padding-left: 17%;
+            background-color: #8B7D7B;
+        }
+
+        label {
+            font-size: 19px;
+            color: #E8E8E8;
+            padding-left: 0;
+        }
+
+        input[type="text"], input[type="number"], input[type="email"]{
+            width: 80%;
+            padding: 14px 12px;
+            box-sizing: border-box;
+            margin: 20px 0;
+            border: none;
+            border-radius: 8px;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #000;
+        }
+
+        .button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 17px;
+            padding: 10px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        .botao {
+            text-align: right; 
+            padding-right: 20%;
+        }
+
+        @media screen and (max-width: 600px) { /*Deixar o cod responsivel para celular*/
+
+            li { /*Barra de Navegação*/
+                display: block;
+            }
+
+            .p {
+                text-align: center;
+            }
+
+            .imagem {
+                padding-top: 50%;
+                margin-left: 20%;
+                margin-right: auto;
+                width: 50%;
+                margin-bottom: 15%;
+            }
+
+            .text {
+                padding-left: 17%;
+            }
+
+            .referencia {
+                padding-left: 7%;
+            }
+
+            .botao {
+                padding-right: 24%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Introdução.html" title="Introdução">Introdução</a></li>
+                <li><a href="Home.html" title="Home">Home</a></li>
+                <li><a href="Sobre.html" title="Sobre">Sobre</a></li>
+            </ul>
+        </nav>
+        <div>
+            <figure class="imagem">
+                <img  src="imagem/IMG_20210322_181918_110.png" alt="Criadora da Página">
+                <figcaption style="background-color: #BEBEBE;">Desenvolvedora</figcaption>
+            </figure>
+        </div>
+    </header>
+    <article>
+        <div class="layout">
+            <h1 class="text" style="text-align: center;">Agradecimento aos leitores</h1>
+        </div>
+        <h3 class="referencia">Este site foi feito por Eva Maria Ananias.</h3>
+        <h3 class="referencia">Agradecimentos a <a style="color: #9B8BE6; text-decoration: none;" href="">Professora Elaine Parra Affonso </a>=)</h3>
+        <h3 class="referencia">Agradecimentos a <a style="color: aquamarine; text-decoration: none;" href="https://www.flaticon.com/br/autores/icongeek26" target="_blank">Flaticon</a>.</h3>
+        <h3 class="referencia">Agradecimentos a <a style="color: #CD5C5C; text-decoration: none;" href="https://autoesporte.globo.com/google/amp/carros/noticia/2019/04/o-top-10-dos-carros-mais-famosos-do-instagram.ghtml" target="_blank">AutoEsporte</a>.</h3>
+        <h3 class="referencia">Agradecimentos a <a style="color: #E0FFFF; text-decoration: none;" href="https://pt.wikipedia.org/">Wikipedia</a>.</h3>
+        <h3 class="referencia">Agradecimentos a <a style="color: #ADFF2F; text-decoration: none;" href="https://autopapo.uol.com.br/noticia/20-principais-lancamentos-de-carros-2021/?amp">AutoPapo</a>.</h3>
+    </article>
+    <aside> 
+        <div class="layout"  style="padding-top: 1%;">
+            <h1 class="text">Deseja entrar em contato:</h1>
+        </div>
+        <div>
+            <form autocomplete="on">
+                <fieldset title="Entrar em contato">
+                    <label for="nome" >Nome: </label> <br>
+                    <input type="text" id="nome" name="nome" required placeholder="Digite aqui..."> 
+                    <br>
+                    <label for="tell" >Telefone: </label> <br>
+                    <input type="number" id="tell" name="tell" required  placeholder="Digite aqui...">
+                    <br>
+                    <label for="email" >E-mail: </label> <br>
+                    <input type="email" id="email" name="email" required  placeholder="Digite aqui...">
+                    <br> <br>
+                    <div class="botao">
+                        <button class="button" style="vertical-align:middle"><span>Enviar </span></button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </aside>
+    <footer>
+        <p>&copy; Copyright 2021 - 2021 Eva Maria Ananias. All Rights Reserved</p>
+    </footer>
+</body>
+</html>

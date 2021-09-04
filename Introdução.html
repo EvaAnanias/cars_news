@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagem/carro-esporte.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="CSS.css">
+    <title>Noticiário de Carros</title>
+    <style>
+
+        body {
+            margin: 0;
+        }
+
+        .text {
+            position: absolute;
+            padding-top: 20%;
+            font-family: Jazz LET, fantasy;
+            color: #F0FFFF;
+            width: 99%;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .img {
+            position: absolute;
+            top: 11%;
+            left: 32%;
+            z-index: 3;
+        }
+
+        .imagem {
+            margin: 0;
+            padding-top: 10px;
+            opacity: 30%;
+        }
+
+        .layout {
+            color: #F0FFFF;
+            padding-left: 26%;
+        }
+
+        div.layout {
+            padding: 10px 15px;
+            background-color: #363636;
+            border-left: 8px solid #BEBEBE;
+        }
+
+        p.introducao {
+            padding-left: 30%;
+            text-align: justify;
+            padding-right: 10%;
+            color: #fefefe;
+        }
+
+        p.footer {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #BEBEBE; 
+        }
+
+        @media screen and (max-width: 600px) { /*Deixar o cod responsivel para celular*/
+
+            .quebrar{
+                display: inline-block;
+                position: relative;
+                right: 25%;
+                width: 90%;
+                
+            }
+            ul{
+                position: absolute;
+                text-align: center;
+                
+            }
+            li { /*Barra de Navegação*/
+            display: block;
+            }
+
+            .img {
+                background: none;
+            }
+
+            .float {
+                float: none;
+            }
+
+            .lado {
+                padding-left: 20%;
+            }
+
+            .imagem {
+                padding-top: 40%;
+            }
+            .sumir {
+                display: none;
+            }
+
+            .clear{
+	            clear: both;
+            }
+
+            .car {
+                
+                padding-left: 40%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Introdução.html" title="Introdução">Introdução</a></li>
+                <li><a href="Home.html" title="Home">Home</a></li>
+                <li><a href="Sobre.html" title="Sobre">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div>
+            <figure>
+                <img class="img sumir " src="imagem/logo.png" alt="Logo">
+            </figure>
+        </div>
+        <div>
+            <figure class="imagem">
+                <img style="width: 100%;" src="imagem/audi.jpg" alt="Audi R8">
+            </figure>
+        </div>
+    </section>
+    <article>
+        <div class="layout">
+            <h1 class="layout">Um pouco sobre a introdução de alguns carros famosos</h1>
+        </div>
+        <div style="padding-top: 3%;">
+            <h3 style="padding-left: 3%; background-color: #BEBEBE;" class="car">Ford Mustang:</h3>
+            <Figure>
+                <img style="float: left;" class="clear" src="imagem/mustang.jpg" alt="Mustang" title="Mustang">
+            </Figure>
+            <p class="introducao quebrar">Desenvolvido em tempo recorde com um orçamento apertado, a Ford apresentou o Mustang 1965 na Feira Mundial 
+                em 17 de abril de 1964, para aclamação instantânea. A Ford planejou 100.000 vendas no primeiro ano, mas os 
+                revendedores venderam 22.000 no primeiro dia. O Ford Mustang lançou um gênero totalmente novo de automóveis, 
+                conhecido como carros pônei.</p>
+        </div>
+        <div style="padding-top: 10%;">
+            <h3 style="padding-left: 3%; background-color: #BEBEBE;" class="car">Honda Civic:</h3>
+            <Figure>
+                <img style="float: left;" src="imagem/civic.jpg" alt="Honda Civic" title="Honda Civic">
+            </Figure>
+            <p class="introducao quebrar">O Honda Civic é um automóvel produzido pela Honda desde 1973. Atualmente encontra-se em sua décima geração. Foi eleito duas 
+                vezes o Carro do Ano pela revista Autoesporte, em 2007 e em 2017. Começou a ser importado para o Brasil em 1992 junto 
+                com o Honda Accord, sendo nacionalizado em 1997. Produzido na unidade da Honda localizada em Sumaré, no estado de São Paulo, 
+                foi o sedan médio mais vendido do Brasil no 1° semestre de 2008, superando modelos concorrentes</p>
+        </div>
+        <div style="padding-top: 13%;">
+            <h3 style="padding-left: 3%; background-color: #BEBEBE;">Nissan GT-R:</h3>
+            <Figure>
+                <img style="float: left;" src="imagem/nissan.jpg" alt="Nissan GT-R" title="Nissan GT-R">
+            </Figure>
+            <p class="introducao quebrar">O Nissan GT-R é um modelo de automóvel superesportivo produzido pela 
+                Nissan, foi anunciado em 2001 com o objectivo de dar sequencia a marca GT-R (que surgiu na década de 1960 que fez 
+                sucesso com o Skyline), em 6 de Dezembro de 2007 foi oficialmente lançado no Japão, em 2008 chegou aos Estados 
+                Unidos, Canadá e Portugal, no resto do mundo apenas em 2009.</p>
+        </div>
+        <div style="padding-top: 13%;">
+            <h3 style="padding-left: 3%; background-color: #BEBEBE;">BMW M3:</h3>
+            <Figure>
+                <img style="float: left;" src="imagem/BMW.jpg" alt="BMW M3" title="BMW M3">
+            </Figure>
+            <p class="introducao quebrar">O BMW M3 é uma versão de alto desempenho do BMW Série 3, desenvolvido pela 
+                divisão interna de automobilismo da BMW, a BMW M GmbH. Os modelos M3 foram produzidos para cada geração da Série 3 desde 
+                que o E30 M3 foi lançado em 1986. O modelo inicial estava disponível em uma carroceria coupé, com uma carroceria conversível adicionada 
+                logo depois. Os M3 Sedans estavam disponíveis durante as gerações E36 (1994–1999) e E90 (2008–2012).</p>
+        </div>
+        <div style="padding-top: 13%;">
+            <h3 style="padding-left: 3%; background-color: #BEBEBE;">Chevrolet Corvette:</h3>
+            <Figure>
+                <img style="float: left;" src="imagem/corvette.jpg" alt="Chevrolet Corvette" title="Chevrolet Corvette">
+            </Figure>
+            <p class="introducao quebrar">
+                A primeira geração do Corvette foi introduzida no final do ano modelo de 1953. Ele apareceu pela primeira vez como um show car 
+                para o General Motors Motorama de 1953, realizado de 17 a 23 de janeiro no Waldorf-Astoria Hotel em Nova York. Na época, 
+                o gerente geral da Chevrolet, Thomas H.</p>
+        </div>
+        <div style="padding-top: 13%;">
+            <h3 style="padding-left: 3%; background-color: #BEBEBE;">Lamborghini Aventador:</h3>
+            <Figure>
+                <img style="float: left;" src="imagem/lamborghini.webp" alt="Lamborghini Aventador" title="Lamborghini Aventador">
+            </Figure>
+            <p class="introducao quebrar">O Lamborghini Aventador (pronúncia espanhola: [aβentaˈðoɾ]) é um carro esportivo com motor central produzido pelo italiano
+                fabricante automotivo Lamborghini. Seguindo a tradição da Lamborghini, o Aventador foi batizado em homenagem a um touro espanhol de luta.</p>
+        </div>
+        <div style="padding-top: 13%;">
+            <h3 style="padding-left: 3%; background-color: #BEBEBE;">Audi R8:</h3>
+            <Figure>
+                <img style="float: left;" src="imagem/audii.jpg" alt="Audi R8" title="Audi R8">
+            </Figure>
+            <p class="introducao quebrar">O nascimento dos primeiros R8s viria em 2005, e a produção total começou em 2006. O R8 foi desenvolvido e montado 
+                pela quattro GmbH, que a empresa então mudou seu nome para Audi Sport em 2016, a divisão especial por trás de todos os sucessos 
+                de pista da Audi e vitórias, assim como os famosos modelos S e RS de estrada.</p>
+        </div>
+    </article>
+    <footer>
+        <div style="padding-top: 13%;">
+            <p class="footer">&copy; Copyright 2021 - 2021 Eva Maria Ananias. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
